@@ -212,14 +212,3 @@ return true;
 <!-- Hosting24 Analytics Code -->
 <script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
 <!-- End Of Analytics Code -->
-
-
-<?php
-$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
-$pagina = $_SERVER['REQUEST_URI'];
-$datum = date("d-m-y / H:i:s");
-$invoegen =  $datum . " - " . $ip . " - " . $pagina . "<br>";
-$fopen = fopen("ip.html", "a");
-fwrite($fopen, $invoegen);
-fclose($fopen);
-?>
